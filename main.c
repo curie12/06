@@ -1,22 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void tenstar() //출력값으로 반환할게 없기때문에 void 
+void func1() //출력값으로 반환할게 없기때문에 void 
 {
-    int i;
-    for(i=0; i<10; i++)
-             printf("*"); 
+    int x;
+    printf("func1 x is at %p\n", &x); 
 }
      
 
 int main(int argc, char *argv[])
 {
-    int i;
-    
-    tenstar();
-    tenstar();
-    tenstar();
+    int x;
+    printf("main x is at %p\n", &x);
+    func1();
           
-  system("PAUSE");	
+  system("PAUSE");
   return 0;
 }
