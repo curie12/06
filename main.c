@@ -1,18 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void func1() //출력값으로 반환할게 없기때문에 void 
+//void square( int a )
+int square( int a )
 {
-    int x;
-    printf("func1 x is at %p\n", &x); 
+    //a = a * a; 
+    return(a*a);
 }
      
 
 int main(int argc, char *argv[])
 {
-    int x;
-    printf("main x is at %p\n", &x);
-    func1();
+    int a = 2;
+    //square(a);
+    a=square(a);
+    printf("a=%i\n",a);
           
     system("PAUSE");
     return 0;
